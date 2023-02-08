@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*esto afecta a todos los elementos*/
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount, .description{
+    font-size: 16px;
+}
+
+.bodytext{
+    font-size: 12px;
+}
+
+.main-header{
+    background-color: var(--amarillo);
+    padding: 20px; /*esto es para darle espacio a los costados*/
+}
+
+.logo{
+    width: 200px;
+}
+
+.burger-button {
+    background-color: var(--azulOscuro);
+    color: var(--blanco); 
+    display: block; /*lo vuelvo elemento de bloque*/
+    max-width: 50px; /*maximo de ancho*/
+    padding: 15px 0; /*relleno interno arriba y abajo 15, costados 0*/
+    border-radius: 8px; /*bordes redondeados*/
+    text-align: center; /*centra*/
+    font-size: 18px;
+    margin: auto; /*para que quede al centro el block*/
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+/*.main-navbar{
+    display: none; /*oculta la navbar en el menu burger
+}*/
+
+.main-navbar ul{ /*aplica a los elementos ul*/
+    list-style: none; /*quita la bullet de la lista*/
+    margin: 0;
+    padding: 0; 
+}
+
+.main-navbar a { /*aplica a los elementos a*/
+    text-decoration: none;
+    color: var(--grisOscuro);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+footer i.fa-solid{
+    color: blue; /*estilos de iconos*/
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+footer div { /*aplica a los div dentro del footer*/
+    color: var(--grisOscuro);
+    padding: 15px;
+}
+
+article img{
+    width: 100%;
+    object-fit: contain;
+}
+
+footer .icon-footer {
+    font-size: 2em;
+    color: var(--azulClaro);
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+
+}

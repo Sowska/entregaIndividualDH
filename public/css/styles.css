@@ -1,16 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 12px;
     box-sizing: border-box; /*esto afecta a todos los elementos*/
 }
+
+body h3{
+    font-size: 24px; /*tamaño de titulares*/
+}
+
+/* fuentes */
 
 html {
     font-family: 'Roboto', sans-serif;
 }
 
-.titulares{
-    font-size: 24px;
-}
+/* requisitos de tamaño */
 
 .price{
     font-size: 18px;
@@ -21,9 +26,10 @@ html {
     font-size: 16px;
 }
 
-.bodytext{
-    font-size: 12px;
-}
+
+/* HEADER */
+
+/* color del header */
 
 .main-header{
     background-color: var(--amarillo);
@@ -46,12 +52,46 @@ html {
     margin: auto; /*para que quede al centro el block*/
 }
 
-.copy-header{
-    font-weight: 400;
-    text-align: center;
+/* BODY */
 
+main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
+    position: center;
+    width: 90%;
 }
 
+.product-section article{ /*Entre cada artículo hay una separación de 10 píxeles*/
+    margin: 10px;
+}
+
+.article-description {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+    border-top: 1px solid var(--grisClaro);
+}
+
+.price{
+    width: 30%;
+}
+
+.discount{
+    width:70%;
+}
+
+main a {
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;;
+}
 
 /*.main-navbar{
     display: none; /*oculta la navbar en el menu burger
@@ -72,17 +112,25 @@ html {
 
 }
 
-footer i.fa-solid{
-    color: blue; /*estilos de iconos*/
-    font-size: 20px;
-    text-align: center;
-}
+
+
+
+
+/* FOOTER */
 
 footer{
     text-align: center;
     margin: 10px 0;
-
 }
+
+footer .icon-footer {
+    font-size: 2em;
+    color: var(--azulClaro);
+    cursor: pointer;
+    transition: all 0.4s ease-in; /*transicion del icono*/
+    margin-bottom: 10px;
+}
+
 
 footer div { /*aplica a los div dentro del footer*/
     color: var(--grisOscuro);
@@ -94,10 +142,5 @@ article img{
     object-fit: contain;
 }
 
-footer .icon-footer {
-    font-size: 2em;
-    color: var(--azulClaro);
-    cursor: pointer;
-    transition: all 0.4s ease-in;
 
-}
+

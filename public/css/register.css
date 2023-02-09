@@ -1,0 +1,30 @@
+.formu{
+    padding: 20px 15px;
+
+}
+
+.control-formu{
+    margin-bottom: 15px;
+
+}
+
+.control-formu label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+
+}
+
+.control{
+    width: 100; /*para que ocupe el 100 del contenedor*/
+    padding: 8px;
+}
+
+.btn-formu{
+    background-color: var(--verde);
+    border: none;
+    font-size: 20px;
+    color: var(--blanco);
+    padding: 5px 10px;
+    border-radius: 8px ;
+}

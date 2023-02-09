@@ -28,10 +28,6 @@
         display: flex;
         justify-content: space-between; /*espacio homogeneo entre elementos*/
     }
-    .copy-header{
-        max-width: 350px;
-        text-align: right;
-    }
 
     .burger-button{
         display: none;
@@ -56,6 +52,60 @@
 
 @media (min-width: 1200px){
 
+    .logo{
+        width: 200px;
+    }
+
+    .main-header-top-container{
+        display: flex;
+        flex-direction:row;
+    }
+
+    .inner-top-container{
+        width: 60%;
+        border: 3px solid blue;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .slogan-container{
+        width: 40%;
+        border: 3px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slogan-text{
+        font-size: 1.5em;
+    }
+    
+    .search-bar-container{
+        border: 3px solid purple;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    
+    }
+    
+    .logo-container{
+        border: 3px solid purple;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    
+    .search-bar {
+        border: 3px solid pink; 
+        margin: 24px 0;
+        width: 80%;
+    }
+    
+    .search-bar input{
+        width: 80%;
+    }
+
+
     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -64,24 +114,8 @@
         display: none;
     }
 
-
-    .main-header-top-bar, .main-navbar{
-        max-width: 1200px;
-        margin: auto; /*margen automatico*/
-    }
-    
     .logo{
         width: 250px;
-    }
-
-    .main-header-top-bar{
-        align-items: center; /*alinea logo y "compra en cuotas..." */
-    }
-
-    .copy-header{
-        max-width: none;
-        font-size: 22px;
-        font-weight: 400;
     }
 
     .main-navbar{
@@ -92,8 +126,8 @@
         margin: 0 10px;
     }
 
-    .main-navbar a {
+    /* .main-navbar a {
         font-size: 19px;
-    }
+    } */
 
 }

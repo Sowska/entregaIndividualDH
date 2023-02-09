@@ -7,6 +7,7 @@
 
 body h3{
     font-size: 24px; /*tamaño de titulares*/
+    color: var(--grisOscuro);
 }
 
 /* fuentes */
@@ -17,40 +18,98 @@ html {
 
 /* requisitos de tamaño */
 
-.price{
-    font-size: 18px;
-    width: 30%;
-}
-
-.discount, .description{
-    font-size: 16px;
-}
-
 
 /* HEADER */
 
 /* color del header */
 
 .main-header{
+    width: 100%;
     background-color: var(--amarillo);
     padding: 20px; /*esto es para darle espacio a los costados*/
 }
 
 .logo{
-    width: 200px;
+    width: 150px;
 }
 
 .burger-button {
-    background-color: var(--azulOscuro);
+    background-color: var(--azulClaro);
     color: var(--blanco); 
     display: block; /*lo vuelvo elemento de bloque*/
     max-width: 50px; /*maximo de ancho*/
-    padding: 15px 0; /*relleno interno arriba y abajo 15, costados 0*/
+    padding: 12px 0; /*relleno interno arriba y abajo 15, costados 0*/
     border-radius: 8px; /*bordes redondeados*/
-    text-align: center; /*centra*/
-    font-size: 18px;
+    text-align: center; /*centra el icono de tres lineas*/
+    font-size: 16px;
     margin: auto; /*para que quede al centro el block*/
 }
+
+.burger-button i{
+    font-size: 24px;
+}
+
+
+.burger-container{
+    /* border: 3px solid orange; */
+    padding: 15px 0;
+}
+
+.main-header-top-container{
+/* border: 3px solid orange; */
+}
+
+
+.slogan-container{
+    /* border: 3px solid blue; */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-text{
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.inner-top-container{
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction:row
+    
+}
+
+.logo-container{
+    /* border: 3px solid purple; */
+    width: 50%;
+}
+
+.search-bar-container{
+    /* border: 3px solid purple; */
+    width: 50%;
+    display: flex;
+
+}
+
+.search-bar {
+border: 5px solid white;
+    display: flex;
+    flex-direction:row;
+    border-radius: 5px;
+}
+
+.search-bar input{
+    width: 100%;
+    border: 1px;
+}
+
+.search-bar button{
+    position: relative;
+    border: 1px;
+    color: var(--grisOscuro);
+}
+
 
 /* BODY */
 
@@ -73,25 +132,70 @@ main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
 
 .price{
     width: 30%;
+    font-size: 18px;
+    width: 50%;
 }
 
 .discount{
+    font-size: 16px;
+    color: var(--verde);
     width:70%;
 }
 
-main a {
+.description{
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--grisOscuro);
+}
+
+main a { /*modifica los iconos de envio (menos el color del camion)*/
     display: block;
 font-size: 16px;
 padding: 5px;
 width: 30px;
 height: 30px;
-border: 1px solid #39b54a;
-background-color: #FFF;
+border: 1px solid var(--verde);
+background-color: var(--blanco);
 border-radius: 50%;
 position: absolute;
 right: 20px;
 top: -15px;;
 }
+
+main a i{
+color: var(--verde); /*cambiando el color de los camioncitos*/
+font-size: 16px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.product-section{
+border: 3px solid fuchsia;
+margin-left: 10%;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+.product-section article{
+    border: 3px solid orange;
+}
+
+.article-description{
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-row{
+    border: 3px solid greenyellow;
+    display: flex;
+    justify-content: space-arround;
+}
+
+
 
 /*.main-navbar{
     display: none; /*oculta la navbar en el menu burger
@@ -116,14 +220,16 @@ top: -15px;;
 
 
 
+
 /* FOOTER */
 
 footer{
+    border: 3px solid blue;
     text-align: center;
     margin: 10px 0;
 }
 
-footer .icon-footer {
+.icon-footer {
     font-size: 2em;
     color: var(--azulClaro);
     cursor: pointer;
@@ -131,10 +237,18 @@ footer .icon-footer {
     margin-bottom: 10px;
 }
 
+.icon-footer i{
+    font-size: 1em;
+}
+
 
 footer div { /*aplica a los div dentro del footer*/
     color: var(--grisOscuro);
     padding: 15px;
+}
+
+footer h3{
+    font-size: 15px;
 }
 
 article img{

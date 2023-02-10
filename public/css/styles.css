@@ -93,10 +93,8 @@ html {
 }
 
 .search-bar {
-border: 5px solid white;
     display: flex;
     flex-direction:row;
-    border-radius: 5px;
 }
 
 .search-bar input{
@@ -118,6 +116,10 @@ main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
     width: 90%;
 }
 
+main h3{
+    margin-left: 10px;
+}
+
 .product-section article{ /*Entre cada artículo hay una separación de 10 píxeles*/
     margin: 10px;
 }
@@ -127,7 +129,6 @@ main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
     flex-wrap: wrap;
     position: relative;
     padding: 15px;
-    border-top: 1px solid var(--grisClaro);
 }
 
 .price{
@@ -148,7 +149,7 @@ main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
     color: var(--grisOscuro);
 }
 
-main a { /*modifica los iconos de envio (menos el color del camion)*/
+main a { /*convierte el elemento a en el circulo verde*/
     display: block;
 font-size: 16px;
 padding: 5px;
@@ -169,28 +170,26 @@ font-size: 16px;
 
 .banner img{
     width: 100%;
+    margin-bottom: 2%;
 }
 
 .product-section{
-border: 3px solid fuchsia;
+/* border: 3px solid fuchsia; */
 margin-left: 10%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
 }
 
-.product-section article{
-    border: 3px solid orange;
-}
 
 .article-description{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     display: flex;
     flex-direction: column;
 }
 
 .price-row{
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     display: flex;
     justify-content: space-arround;
 }
@@ -224,7 +223,7 @@ justify-content: flex-end;
 /* FOOTER */
 
 footer{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     text-align: center;
     margin: 10px 0;
 }
@@ -238,7 +237,7 @@ footer{
 }
 
 .icon-footer i{
-    font-size: 1em;
+    font-size: 2em;
 }
 
 

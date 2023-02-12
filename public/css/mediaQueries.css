@@ -234,7 +234,7 @@ main h3{
 
 main article{
     box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: transform 450ms ease-in-out;
+    transition: ease-in 450ms;
 }
 
 /* transicion de border-shadow */
@@ -275,7 +275,7 @@ transition: all 650ms;
 
 
 .article-description a i{
-transition: transform 450ms ease-in-out;
+transition: transform 450ms;
 }
 
 /* transicion de icono de envio */
@@ -299,6 +299,18 @@ flex-wrap: wrap;
 font-size: 1.5em;
 width: 33%;
 }
+
+
+
+.icon-footer-container i{
+    transition: color 0.5s
+}
+
+.icon-footer-container i:hover{
+
+    color: var(--verde);
+    
+    }
 
 
 

@@ -1,3 +1,16 @@
+.register-section{
+    background-color: blueviolet;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.register-fields{
+    margin: auto; 
+}
+
 .formu{
     padding: 20px 15px;
 

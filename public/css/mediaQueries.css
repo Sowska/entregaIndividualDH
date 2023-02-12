@@ -184,6 +184,10 @@ main article{
 
 }
 
+.search-bar button{
+    cursor: pointer;
+}
+
 .logo-container{
     /* border: 3px solid purple; */
     justify-content: flex-start;

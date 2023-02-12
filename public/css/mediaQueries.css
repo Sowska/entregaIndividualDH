@@ -15,6 +15,10 @@
         border-radius: 5px;
     }
 
+    .description{
+        display: none;
+    }
+
 }
 
 /*----------------Navegacion en tablet-------------------------*/ 
@@ -285,14 +289,16 @@
     footer{
         /* border: 3px solid blue; */
         text-align: center;
-        margin: 10% 5%;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .icon-footer{
         font-size: 1.5em;
         width: 33%;
     }
+
+    
 
     footer i{
         margin-bottom: 5px;
@@ -302,9 +308,19 @@
         padding: 0;
     }
 
-    .copyright{
-        position: absolute;
-        bottom: -700px;
+
+
+    .icon-footer-container{
+        max-width: 360px;
+        margin: 0 7%;
     }
+
+    .copyright{
+        text-align: left;
+        width: 100%;
+        position:relative;
+        margin: 5% 0 1% 1%;
+    }
+
 
 }

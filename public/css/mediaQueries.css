@@ -244,6 +244,13 @@ main article:hover{
 
 }
 
+/* transicion de la descripcion de producto  */
+
+main article:hover .article-description {
+    transform: translateY(-10px); 
+    opacity: 100%;
+}
+
 .product-section{
     display: flex;
     flex-direction: row;
@@ -266,13 +273,6 @@ opacity: 0%;
 transition: all 650ms;
 }
 
-
-/* transicion de la descripcion de producto  */
-
-.article-description:hover {
-transform: translateY(-10px); 
-opacity: 100%;
-}
 
 .article-description a i{
 transition: transform 450ms ease-in-out;

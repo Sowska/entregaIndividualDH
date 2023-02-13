@@ -5,11 +5,6 @@
     box-sizing: border-box; /*esto afecta a todos los elementos*/
 }
 
-body h3{
-    font-size: 24px; /*tamaño de titulares*/
-    color: var(--grisOscuro);
-}
-
 /* fuentes */
 
 html {
@@ -111,9 +106,16 @@ html {
 
 /* BODY */
 
+
+body h3{
+    font-size: 24px; /*tamaño de titulares*/
+    color: var(--grisOscuro);
+}
+
 main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
     position: center;
     width: 90%;
+    padding-bottom: 2.5rem;
 }
 
 main h3{
@@ -226,6 +228,7 @@ footer{
     /* border: 3px solid blue; */
     text-align: center;
     margin: 10px 0;
+
 }
 
 .icon-footer {

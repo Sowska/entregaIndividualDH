@@ -76,6 +76,7 @@
     /* border: 3px solid pink;  */
     margin: 24px 0;
     width: 90%;
+    max-height: 42px;
 }
 /* configurar barra de busqueda para resolucion */
 .search-bar input{
@@ -90,7 +91,6 @@
     color: var(--grisOscuro);
     margin-left: 5px;
 }
-/* ------------------------------------------------- */
 
 
 .burger-button{
@@ -202,6 +202,7 @@ main article{
 
 .search-bar input{
     width: 80%;
+    
 }
 
 
@@ -234,6 +235,15 @@ main{
 
 main h3{
     margin: 2% 5%;
+}
+
+.registration{
+    width: 40%;
+}
+
+.login-section{
+    margin-bottom: 8%;
+    padding-left: 0;
 }
 
 main article{

@@ -81,28 +81,23 @@
     <section class=login-section>
         
         <form class="registration" method="post">
-            <h1>¡Bienvenid@ a Mercado Liebre!</h1>
             
-            <label class="pure-material-textfield-outlined">
-                <input placeholder=" " type="text" required>
-                <span>Nombre de Usuario</span>
-            </label>
-            
-            <label class="pure-material-textfield-outlined">
-                <input placeholder=" " type="password" required>
-                <span>Contraseña</span>
-            </label>
-            
-            
-            <button class="sign-up-button" type="submit">Enviar</button>
-            
-            <div class="done">
-                <h1>¡Cuenta creada con éxito!</h1>
-                <a class="pure-material-button-text" href="./views/home.html">Ir a Inicio</a>
+            <div>
+                <label class="txtfld-name">
+                    <span>Nombre de Usuario</span>
+                    <input placeholder=" " type="text" minlength="3" required>
+                </label>
             </div>
-            <div class="progress">
-                <progress class="pure-material-progress-circular">
+            
+            <div>
+                <label class="txtfld-password">
+                    <span>Elegí tu contraseña</span>
+                    <input placeholder=" " type="password" minlength="6" required>
+                </label>
             </div>
+
+            <button class="signup-btn" type="submit">Enviar</button>
+
             </form>
 
     </section>
@@ -133,6 +128,7 @@
             <p>Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
+
 </body>
 
 </html>

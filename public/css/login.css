@@ -1,7 +1,7 @@
 
 .login-section{
     /* background-color: blueviolet; */
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items:center;
@@ -16,10 +16,6 @@
 
 span{
     color: var(--grisOscuro);
-}
-
-.login-section{
-    padding-left: 15%;
 }
 
 .login-section div{

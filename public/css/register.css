@@ -4,7 +4,6 @@ main{
 }
 
 .register-container{
-    background-color: var(--grisClaro);
     width: 100%;
     margin: auto;
     display: flex;
@@ -15,7 +14,6 @@ main{
 
 h1{
     text-align: center;
-    background-color: var(--grisClaro);
     padding: 20px;
     font-size: 24px;
 }

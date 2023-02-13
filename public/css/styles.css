@@ -114,7 +114,7 @@ body h3{
 main{ /*centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
     position: center;
     width: 90%;
-    padding-bottom: 2.5rem;
+    padding: 15px;
 }
 
 main h3{
@@ -240,6 +240,7 @@ footer{
 
 .icon-footer i{
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 

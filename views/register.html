@@ -77,40 +77,86 @@
 
     <main>
 
-        <section class=register-section>
+        <section class="register-container">
             
-            <section class="register-fields">
+            <form action="action=/home" method="POST">
 
-            <form action="/crear-producto" method="POST" class="formu"> <!--post define que trabajamos con un formulario de forma segura-->
-                <p class="control-formu">
-                    <label>Nombre del producto:</label>
-                    <input type="text" name="nombre" class="control">
-                </p>
-                <p class="control-formu">
-                    <label>Precio:</label>
-                    <input type="text" name="precio" placeholder="00.00" class="control">
-                </p>
-                <p class="control-formu">
-                    <label>Categoria:</label>
-                    <select name="categoria" class="control">
-                        <option value="hogar">Hogar</option>
-                        <option value="electronica">Electronica</option>
-                        <option value="indumentaria">Indumentaria</option>
-            
-                    </select>
-                </p>
-                <p class="control-formu">
-                    <label>Esta en oferta:</label>
-                    <input type="radio" name="enOferta">
-                </p>
-                <p class="control-formu">
-                    <label >Descripción:</label>
-                    <textarea name="descripcion" class="control"></textarea>
-                </p>
-                <button type="submit" class="btn-formu">Enviar</button>
-                <button type="reset" class="btn-formu">Borrar</button>
-                </form>
-            </section>
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Nombre</label>
+                        <input placeholder=" " type="text" minlength="3" required>
+                    </p>
+
+                    <p class="field-container">
+                        <label>Apellido</label>
+                        <input placeholder=" " type="text" minlength="3" required>
+                    </p>
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Nombre de usuario</label>
+                        <input placeholder=" " type="text" minlength="3" required>
+                    </p>
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" min="1922-01-01" max="2003-12-31" required>
+                    </p>                  
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Direccion</label>
+                        <input placeholder=" " type="text" minlength="10" required>
+                    </p>
+
+                    <p class="field-container">
+                        <label>Pais</label>
+                        <select class="gds-cr gds-countryflag" country-data-region-id="gds-cr-four" data-language="es" required></select>
+                    </p>
+
+                    <p class="field-container">
+                        <label>Provincia</label>
+                        <select id="gds-cr-four" required></select>
+                    </p>                    
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Perfil del Usuario</label>
+                        <input type="radio" name="user">Comprador
+                        <input type="radio" name="user">Vendedor
+                    </p>  
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Intereses</label>
+                        <input type="checkbox" name="electro">Electro
+                        <input type="checkbox" name="moda">Moda
+                        <input type="checkbox" name="hogar">Hogar
+                        <input type="checkbox" name="jugueteria">Jugueteria
+                        <input type="checkbox" name="vidasana">Vida sana
+                    </p>  
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <label>Agregar foto de perfil</label>
+                        <input type="file" id="upload-file">
+                    </p>  
+                </div>
+
+                <div class="form-rows">
+                    <button type="submit" class="sendbtn">Enviar</button>
+                    <button type="reset" class="deletebtn">Borrar</button>
+                </div>
+                
+            </form>
+
 
         </section>
 

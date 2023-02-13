@@ -83,74 +83,88 @@
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <label>Nombre</label>
-                        <input placeholder=" " type="text" minlength="3" required>
+                        <input class="focus-input" placeholder="Nombre" type="text" minlength="3" required>
                     </p>
 
                     <p class="field-container">
-                        <label>Apellido</label>
-                        <input placeholder=" " type="text" minlength="3" required>
+                        <input class="focus-input" placeholder="Apellido" type="text" minlength="3" required>
                     </p>
                 </div>
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <label>Nombre de usuario</label>
-                        <input placeholder=" " type="text" minlength="3" required>
+                        <input class="focus-input" placeholder="Nombre de usuario" type="text" minlength="3" required>
+                    </p>
+
+                    <p class="field-container">
+                        <input class="focus-input" placeholder="E-mail" type="email" required>
                     </p>
                 </div>
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <label>Fecha de nacimiento</label>
+                        <input class="focus-input" placeholder="Contraseña" type="password" minlength="6" id="password" required>
+                    </p>
+
+                    <p class="field-container">
+                        <input class="focus-input" placeholder="Repetir contraseña" type="password" minlength="6" id="confirm_password" required>
+                    </p>
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container">
+                        <h4>Fecha de nacimiento</h4>
                         <input type="date" min="1922-01-01" max="2003-12-31" required>
                     </p>                  
                 </div>
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <label>Direccion</label>
-                        <input placeholder=" " type="text" minlength="10" required>
+                        <input class="focus-input" placeholder="Direccion" type="text" minlength="10" required>
                     </p>
 
                     <p class="field-container">
-                        <label>Pais</label>
+                        <h4>Pais</h4>
                         <select class="gds-cr gds-countryflag" country-data-region-id="gds-cr-four" data-language="es" required></select>
                     </p>
 
                     <p class="field-container">
-                        <label>Provincia</label>
+                        <h4>Provincia</h4>
                         <select id="gds-cr-four" required></select>
                     </p>                    
                 </div>
 
                 <div class="form-rows">
-                    <p class="field-container">
-                        <label>Perfil del Usuario</label>
-                        <input type="radio" name="user">Comprador
-                        <input type="radio" name="user">Vendedor
+                    <p class="field-container-radio">
+                        <h4>Perfil del Usuario</h4>
+                        <ul id="preferences">
+                            <li><label><input name="prefer" value="1" type="radio">Comprador</label></li>
+                            <li><input name="prefer" value="2" type="radio">Vendedor</li>
+                            </ul>
+                    </p>  
+                </div>
+
+                <div class="form-rows">
+                    <p class="field-container-checkbox">
+                        <h4>Intereses</h4>
+                        <ul id="preferences">
+                            <li><input type="checkbox" name="electro">Electro</input></li>
+                            <li><input type="checkbox" name="moda">Moda</input></li>
+                            <li><input type="checkbox" name="hogar">Hogar</input></li>
+                            <li><input type="checkbox" name="jugueteria">Jugueteria</input></li>
+                            <li><input type="checkbox" name="vidasana">Vida sana</input></li>
+                        </ul>
                     </p>  
                 </div>
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <label>Intereses</label>
-                        <input type="checkbox" name="electro">Electro
-                        <input type="checkbox" name="moda">Moda
-                        <input type="checkbox" name="hogar">Hogar
-                        <input type="checkbox" name="jugueteria">Jugueteria
-                        <input type="checkbox" name="vidasana">Vida sana
-                    </p>  
-                </div>
-
-                <div class="form-rows">
-                    <p class="field-container">
-                        <label>Agregar foto de perfil</label>
+                        <h4>Agregar foto de perfil</h4>
                         <input type="file" id="upload-file">
                     </p>  
                 </div>
 
-                <div class="form-rows">
+                <div class="form-rows-btn">
                     <button type="submit" class="sendbtn">Enviar</button>
                     <button type="reset" class="deletebtn">Borrar</button>
                 </div>

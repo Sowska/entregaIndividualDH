@@ -22,6 +22,14 @@ app.get('/login',(req,res) => {
 res.sendFile(path.join(__dirname, './views/login.html'));
 });
 
+app.post('/home', (req, res) => {
+    /*console.log(req.body);
+    Guardar en el sistema
+    users.push(req.body);*/
+    // Redireccionamos a la pagina
+    res.redirect('/');
+});
+
 app.listen(port, () => {
     console.log("Server started succesfully");
 

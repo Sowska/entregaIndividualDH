@@ -30,6 +30,7 @@ app.post('/home', (req, res) => {
     res.redirect('/');
 });
 
+
 app.listen(port, () => {
     console.log("Server started succesfully");
 

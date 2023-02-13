@@ -76,10 +76,11 @@
     </header>
 
     <main>
-
+        <h1>Creá tu cuenta</h1>
         <section class="register-container">
             
-            <form action="action=/home" method="POST">
+            
+            <form action="/home" method="POST">
 
                 <div class="form-rows">
                     <p class="field-container">
@@ -120,46 +121,37 @@
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <input class="focus-input" placeholder="Direccion" type="text" minlength="10" required>
+                        <input class="focus-input" placeholder="Domicilio" type="text" minlength="10" required>
                     </p>
 
-                    <p class="field-container">
-                        <h4>Pais</h4>
-                        <select class="gds-cr gds-countryflag" country-data-region-id="gds-cr-four" data-language="es" required></select>
-                    </p>
-
-                    <p class="field-container">
-                        <h4>Provincia</h4>
-                        <select id="gds-cr-four" required></select>
-                    </p>                    
                 </div>
 
                 <div class="form-rows">
-                    <p class="field-container-radio">
-                        <h4>Perfil del Usuario</h4>
+                    <h4>Perfil del Usuario</h4>
+                    <section class="field-container-radio">
                         <ul id="preferences">
-                            <li><label><input name="prefer" value="1" type="radio">Comprador</label></li>
-                            <li><input name="prefer" value="2" type="radio">Vendedor</li>
+                            <li><label><input name="prefer" value="1" type="radio">  Comprador</label></li>
+                            <li><input name="prefer" value="2" type="radio">  Vendedor</li>
                             </ul>
-                    </p>  
+                    </section>  
                 </div>
 
                 <div class="form-rows">
-                    <p class="field-container-checkbox">
-                        <h4>Intereses</h4>
+                    <h4>Intereses</h4>
+                    <section class="field-container-checkbox">
                         <ul id="preferences">
-                            <li><input type="checkbox" name="electro">Electro</input></li>
-                            <li><input type="checkbox" name="moda">Moda</input></li>
-                            <li><input type="checkbox" name="hogar">Hogar</input></li>
-                            <li><input type="checkbox" name="jugueteria">Jugueteria</input></li>
-                            <li><input type="checkbox" name="vidasana">Vida sana</input></li>
+                            <li><input type="checkbox" name="electro">  Electro</input></li>
+                            <li><input type="checkbox" name="moda">  Moda</input></li>
+                            <li><input type="checkbox" name="hogar">  Hogar</input></li>
+                            <li><input type="checkbox" name="jugueteria">  Jugueteria</input></li>
+                            <li><input type="checkbox" name="vidasana">  Vida sana</input></li>
                         </ul>
-                    </p>  
+                    </section>  
                 </div>
 
                 <div class="form-rows">
+                    <h4>Agregar foto de perfil</h4>
                     <p class="field-container">
-                        <h4>Agregar foto de perfil</h4>
                         <input type="file" id="upload-file">
                     </p>  
                 </div>

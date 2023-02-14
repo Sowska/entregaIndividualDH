@@ -176,7 +176,6 @@ font-size: 16px;
 
 .product-section{
 /* border: 3px solid fuchsia; */
-margin-left: 10%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;

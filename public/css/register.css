@@ -3,6 +3,12 @@ main{
     width: 100%; 
 }
 
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
 .register-container{
     width: 100%;
     margin: auto;
@@ -10,12 +16,6 @@ main{
     justify-content: center;
     align-items: center;
     padding: 2%;
-}
-
-h1{
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
 }
 
 .form{
@@ -28,6 +28,13 @@ h1{
 .form-rows{
     display: flex;
     flex-direction: column;
+    border-bottom: 5px;
+}
+
+form-rows-box{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px;
 }
 
 .field-container{
@@ -35,6 +42,7 @@ h1{
     flex-direction: column;
     margin: 10px 0;
 }
+
 
 .field-container-radio, .field-container-checkbox{
 
@@ -92,10 +100,6 @@ li{
 
 h4{
     margin: 10px 0;  
-}
-
-.form-rows{
-    border-bottom: 5px;
 }
 
 .form-rows-btn{

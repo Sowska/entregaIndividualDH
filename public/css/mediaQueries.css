@@ -2,7 +2,7 @@
 
 @media (max-width: 768px){
 
-.product-description {
+.article-description {
     display: none; /*Solo en el caso mobile la descripción del artículo no se visualizará*/
 }
 
@@ -13,10 +13,6 @@
 .search-bar {
     border: 2px solid var(--blanco);
     border-radius: 5px;
-}
-
-.description{
-    display: flex;
 }
 
 }
@@ -73,20 +69,20 @@
 }
 
 .search-bar {
-    /* border: 3px solid pink;  */
+
     width: 100%;
+    border: solid 3px var(--grisClaro);
+    border-radius: 3px;
 }
 /* configurar barra de busqueda para resolucion */
 .search-bar input{
     width: 100%;
-    border-radius: 3px;
     padding: 0 5px;
 }
 
 .search-bar button{ 
     position: relative;
-    border: solid 1px var(--grisClaro);
-    border-radius: 3px;
+    border: solid 3px var(--grisClaro);
     color: var(--grisOscuro);
     background-color: var(--blanco);
 }
@@ -124,7 +120,6 @@ main article{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 5%;
 
 }
 
@@ -132,6 +127,9 @@ main article{
     max-width: 45%;
 }
 
+.icon-footer-container {
+    width: 200px;
+}
 
 
 }
@@ -207,7 +205,6 @@ display: flex;
 .search-bar button {
     position: relative;
     border: solid 3px var(--blanco);
-    border-radius: 3px;
     color: var(--grisOscuro);
     margin: 0;
     background-color: var(--blanco);
@@ -237,9 +234,49 @@ display: flex;
 
 /* MAIN */
 
+/* REGISTER */
+
 .register-container{
     flex-direction: row;
 }
+
+.registration{
+    width: 40%;
+}
+
+.form-rows{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px;
+    justify-content: space-between;
+}
+
+.field-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="date"]{
+    margin: 10px 0px;
+    margin-right: 60px;
+    }
+
+/* LOGIN */
+
+.login-section{
+    margin-bottom: 8%;
+    padding-left: 0;
+}
+
+.signup-btn{
+    transition: background-color 0.5s;
+}
+
+.signup-btn:hover{
+background-color: #0022AA;
+}
+
+/* HOME */
 
 main{
     margin-bottom: 5%;
@@ -247,15 +284,6 @@ main{
 
 main h3{
     margin: 2% 5%;
-}
-
-.registration{
-    width: 40%;
-}
-
-.login-section{
-    margin-bottom: 8%;
-    padding-left: 0;
 }
 
 main article{
@@ -311,13 +339,6 @@ transform: rotate(-90deg);
 cursor: pointer;
 }
 
-.signup-btn{
-    transition: background-color 0.5s;
-}
-
-.signup-btn:hover{
-background-color: #0022AA;
-}
 
 }
 
@@ -331,10 +352,9 @@ flex-wrap: wrap;
 }
 
 .icon-footer{
-font-size: 1.5em;
+font-size: 2em;
 width: 33%;
 }
-
 
 
 .icon-footer-container i{
@@ -360,7 +380,7 @@ padding: 0;
 
 
 .icon-footer-container{
-    max-width: 360px;
+    width: 360px;
     margin: auto;
 }
 

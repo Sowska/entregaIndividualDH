@@ -84,11 +84,11 @@
 
                 <div class="form-rows">
                     <p class="field-container">
-                        <input class="focus-input" placeholder="Nombre" type="text" minlength="3" required>
+                        <input class="focus-input name-field" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Nombre" type="text" minlength="3" required>
                     </p>
 
-                    <p class="field-container">
-                        <input class="focus-input" placeholder="Apellido" type="text" minlength="3" required>
+                    <p class="field-container name-field">
+                        <input class="focus-input" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Apellido" type="text" minlength="3" required>
                     </p>
                 </div>
 
@@ -113,10 +113,8 @@
                 </div>
 
                 <div class="form-rows">
-                    <p class="field-container">
                         <h4>Fecha de nacimiento</h4>
-                        <input type="date" min="1922-01-01" max="2003-12-31" required>
-                    </p>                  
+                        <input type="date" min="1922-01-01" max="2003-12-31" required>               
                 </div>
 
                 <div class="form-rows">
@@ -126,7 +124,7 @@
 
                 </div>
 
-                <div class="form-rows">
+                <div class="form-rows-box">
                     <h4>Perfil del Usuario</h4>
                     <section class="field-container-radio">
                         <ul id="preferences">
@@ -136,7 +134,7 @@
                     </section>  
                 </div>
 
-                <div class="form-rows">
+                <div class="form-rows-box">
                     <h4>Intereses</h4>
                     <section class="field-container-checkbox">
                         <ul id="preferences">

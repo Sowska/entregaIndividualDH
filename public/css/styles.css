@@ -230,11 +230,7 @@ footer{
 }
 
 .icon-footer {
-    font-size: 2em;
     color: var(--azulClaro);
-    cursor: pointer;
-    transition: all 0.4s ease-in; /*transicion del icono*/
-    margin-bottom: 10px;
 }
 
 .icon-footer i{

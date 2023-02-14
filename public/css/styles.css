@@ -46,14 +46,109 @@ html {
 
 
 .burger-container{
-    /* border: 3px solid orange; */
-    padding: 15px 0;
-}
-
-.main-header-top-container{
 /* border: 3px solid orange; */
+display:flex;
+    height: 100%;
+    justify-content: flex-end;
 }
 
+.navigation{
+    width:60%;
+}
+
+/* Hamburger */
+.hamburger1 {
+background-color: #1259c3;
+max-width: 45px;
+margin: 10px;
+display: -ms-grid;
+display: grid;
+padding: 10px 4px; /*tamaño de burger button*/
+grid-template-rows: repeat(3, 1fr);
+justify-items: center;
+z-index: 120;
+border-radius: 8px;
+}
+
+/*hamburger lines*/
+
+.hamburger1 div {
+background-color: #fff;
+position: relative;
+width: 20px;
+height: 4px;
+margin: 2px;
+    border-radius: 2px;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+-webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+-webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+margin-top: -6px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+-webkit-transform: scale(0);
+        transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+height: 340px;
+}
+
+
+/* Menu */
+.menu1 {
+width: 100%;
+background-color: #1259c3;
+position: absolute;
+margin: 0;
+border-radius: 8px;
+display: -ms-grid;
+display: grid;
+grid-template-rows: 1fr repeat(4, 0.5fr);
+grid-row-gap: 25px;
+list-style: none;
+clear: both;
+width: auto;
+text-align: center;
+height: 0px;
+overflow: hidden;
+transition: height 0.4s ease;
+z-index: 120;
+transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+margin-top: 40px;
+}
+
+.menu1 a:last-child {
+margin-bottom: 20px;
+}
+
+.link1 {
+color: #fff;
+text-decoration: none;
+width: 100%;
+margin: auto;
+padding: 10px;
+font: 700 18px 'Oswald', sans-serif;
+}
+
+/* ------------------------ */
 
 .slogan-container{
     /* border: 3px solid blue; */
@@ -101,6 +196,7 @@ html {
     position: relative;
     border: 1px;
     color: var(--grisOscuro);
+    background-color: var(--blanco);
 }
 
 

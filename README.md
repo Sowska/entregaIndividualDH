@@ -111,3 +111,5 @@ de envío del formulario, su color de fondo cambie a #0022AA.
 - estilizar login y register
 - configurar boton de submit para redireccionar al home.
 - ordenar checkbox y radiobutton para que queden bien alineados con su label
+- cambiar las propiedades flex del formulario de register para que se vea distinto en resolucion desktop
+- agregar un hamburger button interactivo y estetico a la mobile view
